@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Luis Eduardo Portafolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Luis Eduardo | Portafolio</title>
+  <meta name="description" content="Portafolio de Luis Eduardo Chávez Hernández, desarrollador Front-end / Back-end y freelancer.">
+  <meta name="keywords" content="desarrollador, freelancer, front-end, back-end, ux, oaxaca">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -17,15 +17,6 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- ================================================================
-       LIBRERÍAS EXTERNAS (vendor) QUE USA ESTA PLANTILLA:
-       - bootstrap          -> el framework de estilos (grid, botones, etc.)
-       - bootstrap-icons    -> los iconitos (bi bi-xxx) que se usan en todo el sitio
-       - aos ("Animate On Scroll") -> las animaciones al hacer scroll (data-aos="...")
-       - glightbox          -> la ventana emergente para ver imágenes en grande (Portfolio)
-       - swiper             -> el carrusel deslizable (Testimonials)
-       No necesitas tocar estas carpetas, solo saber para qué sirve cada una.
-       ================================================================ -->
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -33,9 +24,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File: aquí están TODOS los estilos y la paleta de colores
-       (ver el bloque de variables --accent-color, etc. al inicio de este
-       archivo, ya cambiado a la paleta "sistemas computacionales") -->
+  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -49,83 +38,37 @@
 
 <body class="index-page">
 
-  <!-- ================================================================
-       HEADER / MENÚ DE NAVEGACIÓN
-       ------------------------------------------------------------
-       Esta barra se queda fija arriba (fixed-top) mientras se hace
-       scroll. Incluye: tu foto de perfil, tu nombre, tus redes
-       sociales y el menú de links que llevan a cada sección de la
-       página (por anclas #hero, #about, #resume, etc.).
-       QUÉ SUELES EDITAR AQUÍ:
-         - profile-square-1.webp -> tu foto real de perfil
-         - "Alex Smith"          -> tu nombre
-         - los href="#" de redes -> tus links reales (LinkedIn, GitHub, etc.)
-         - la lista <ul> de abajo -> los nombres/orden de tus secciones
-       Los colores de este menú salen de las variables --nav-* que
-       están al inicio de assets/css/main.css (ya cambiadas a la
-       paleta turquesa/marino de "sistemas computacionales").
-       ================================================================ -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <!-- Uncomment the line below if you also wish to use an text logo -->
-        <!-- <h1 class="sitename">Style</h1>  -->
       </a>
 
       <nav id="navmenu" class="navmenu">
 
-        <!-- Foto de perfil circular que aparece arriba del menú -->
         <div class="profile-img">
           <img src="img/foto.png.jpeg" alt="" class="img-fluid rounded-circle">
         </div>
 
-        <!-- Tu nombre, se muestra debajo de la foto de perfil -->
         <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Alex Smith</h1>
+          <h1 class="sitename">Luis Eduardo</h1>
         </a>
 
-        <!-- Iconos de redes sociales: cambia los href="#" por tus links reales -->
         <div class="social-links text-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-github"></i></a>
         </div>
 
-        <!-- Links del menú principal. Cada href="#id" apunta a una sección
-             más abajo en el mismo index.html (scroll suave automático). -->
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Acerca de Mi</a></li>
-          <li><a href="#resume">resumen</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Acerca de Mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#resume">Trayectoria</a></li>
           <li><a href="#services">Servicios</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+          <li><a href="#portfolio">Portafolio</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
-        <!-- Ícono de "hamburguesa" que aparece solo en pantallas chicas -->
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -134,25 +77,6 @@
 
   <main class="main">
 
-    <!-- ================================================================
-         SECCIÓN HERO (portada / primera pantalla)
-         ------------------------------------------------------------
-         Es lo primero que ve la persona al entrar al sitio. Tiene:
-           - Un título con efecto de "máquina de escribir" (Typed.js),
-             controlado por el atributo data-typed-items (ahí van las
-             palabras que van cambiando: "Designer, Developer", etc.)
-           - Un párrafo corto de presentación (<p class="lead">)
-           - Contadores animados (hero-stats), por ejemplo proyectos
-             hechos, años de experiencia, clientes. Cambia el número en
-             data-purecounter-end y el texto en stat-label.
-           - Dos botones de acción (hero-actions): uno lleva a
-             #portfolio y otro a #contact.
-           - Tus redes sociales (social-links).
-           - Del lado derecho, tu foto (hero-main-image) y 3 tarjetas
-             flotantes (floating-card) con íconos y texto corto.
-         QUÉ SUELES EDITAR: el título, el párrafo, las 3 palabras del
-         typed, los números de las estadísticas y la imagen.
-         ================================================================ -->
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
@@ -161,36 +85,30 @@
 
           <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
             <div class="content-wrapper">
-              <!-- "typed" hace que las palabras dentro de data-typed-items
-                   se escriban y borren solas en bucle (ver assets/js/main.js) -->
-              <h1 class="hero-title">Programador <span class="typed" data-typed-items="Front-end, back-end, Freelancer, UX"></span></h1>
-              <p class="lead">Cubriendo las necesidades que van descubriendo nuevamente</p>
+              <h1 class="hero-title">Desarrollador <span class="typed" data-typed-items="Front-end, Back-end, Freelancer, UX/UI"></span></h1>
+              <p class="lead">Construyendo soluciones digitales completas, del diseño a la base de datos</p>
 
-              <!-- Contadores animados: cambia data-purecounter-end por el
-                   número final y el texto de stat-label por lo que quieras
-                   mostrar (ej. "Proyectos", "Años estudiando", "Cursos") -->
               <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
                 <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Proyectos completados</span>
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Proyectos realizados</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Años estudiando Sistemas</span>
                 </div>
                 <div class="stat-item">
                   <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Anios de experiencia</span>
-                </div>
-                <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Happy Clients</span>
+                  <span class="stat-label">Lenguajes de programación</span>
                 </div>
               </div>
 
               <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                <a href="#portfolio" class="btn btn-primary">Ver Mi Trabajo</a>
+                <a href="#contact" class="btn btn-outline">Contáctame</a>
               </div>
 
               <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-                <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-linkedin"></i></a>
                 <a href="#"><i class="bi bi-github"></i></a>
                 <a href="#"><i class="bi bi-instagram"></i></a>
@@ -203,18 +121,18 @@
               <div class="floating-elements">
                 <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300">
                   <i class="bi bi-palette"></i>
-                  <span>UI/UX Design</span>
+                  <span>Diseño UI/UX</span>
                 </div>
                 <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
                   <i class="bi bi-code-slash"></i>
-                  <span>Development</span>
+                  <span>Desarrollo</span>
                 </div>
                 <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="500">
-                  <i class="bi bi-lightning"></i>
-                  <span>Creative Ideas</span>
+                  <i class="bi bi-camera"></i>
+                  <span>Fotografía</span>
                 </div>
               </div>
-              <img src="assets/img/profile/profile-square-1.webp" alt="Portfolio Hero" class="img-fluid hero-main-image">
+              <img src="img/foto.png.jpeg" alt="Portafolio" class="img-fluid hero-main-image">
               <div class="image-overlay"></div>
             </div>
           </div>
@@ -224,26 +142,13 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- ================================================================
-         SECCIÓN ABOUT (Sobre mí)
-         ------------------------------------------------------------
-         Estructura: foto + firma/cita a la izquierda, y a la derecha
-         una introducción, 3 tarjetas de "skills" rápidas (skill-item)
-         y una línea de tiempo (journey-timeline) con año + descripción.
-         QUÉ SUELES EDITAR:
-           - El texto "Lorem ipsum..." -> tu presentación real
-           - Las 3 skill-item -> tus 3 fortalezas principales
-           - journey-timeline -> tus estudios/experiencia por año
-           - profile-square-1.webp y signature-1.webp -> tu foto/firma
-         ================================================================ -->
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
       <div class="container section-title">
-        <h2>About</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Acerca de Mí</h2>
+        <p>Estudiante de Ingeniería en Sistemas Computacionales y desarrollador freelance</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -252,11 +157,10 @@
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
             <div class="profile-image-wrapper">
               <div class="profile-image">
-                <img src="assets/img/profile/profile-square-1.webp" alt="Profile" class="img-fluid">
+                <img src="img/foto.png.jpeg" alt="Foto de perfil" class="img-fluid">
               </div>
               <div class="signature-section">
-                <img src="assets/img/misc/signature-1.webp" alt="Signature" class="signature">
-                <p class="quote">Building meaningful digital experiences through creative code.</p>
+                <p class="quote">Codigo agil y soluciones probadas</p>
               </div>
             </div>
           </div>
@@ -264,8 +168,8 @@
           <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
               <div class="intro">
-                <h2>Hi, I'm Brandon - a Creative Developer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                <h2>Hola, soy Luis Eduardo - Desarrollador Front-end / Back-end</h2>
+                <p>Soy estudiante de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Oaxaca, apasionado por construir aplicaciones completas: desde interfaces cuidadas hasta bases de datos y lógica del lado del servidor. Me gusta aprender tecnologías nuevas y aplicarlas en proyectos reales, combinando desarrollo con un buen ojo para la fotografía y el diseño visual.</p>
               </div>
 
               <div class="skills-grid">
@@ -273,48 +177,48 @@
                   <div class="skill-icon">
                     <i class="bi bi-palette"></i>
                   </div>
-                  <h4>UI/UX Design</h4>
-                  <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</p>
+                  <h4>Diseño UI/UX</h4>
+                  <p>Interfaces claras y centradas en la experiencia del usuario</p>
                 </div>
                 <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
                   <div class="skill-icon">
                     <i class="bi bi-code-slash"></i>
                   </div>
-                  <h4>Frontend Dev</h4>
-                  <p>Sed porttitor lectus nibh. Cras ultricies ligula sed magna</p>
+                  <h4>Front-end</h4>
+                  <p>Interfaces web funcionales y responsivas</p>
                 </div>
                 <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
                   <div class="skill-icon">
-                    <i class="bi bi-camera"></i>
+                    <i class="bi bi-server"></i>
                   </div>
-                  <h4>Photography</h4>
-                  <p>Vestibulum ac diam sit amet quam vehicula elementum</p>
+                  <h4>Back-end</h4>
+                  <p>Lógica de negocio, APIs y bases de datos</p>
                 </div>
               </div>
 
               <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-item">
-                  <div class="year">2019</div>
-                  <div class="description">Graduated with B.A. in Digital Design from Creative University</div>
+                  <div class="year">2022</div>
+                  <div class="description">Inicio de la carrera de Ingeniería en Sistemas Computacionales en el ITO</div>
                 </div>
                 <div class="timeline-item">
-                  <div class="year">2020</div>
-                  <div class="description">Joined InnovateTech as Junior Frontend Developer</div>
+                  <div class="year">2024</div>
+                  <div class="description">Primeros proyectos freelance y exploración de plataformas de user testing</div>
                 </div>
                 <div class="timeline-item">
-                  <div class="year">2023</div>
-                  <div class="description">Launched freelance career specializing in creative web solutions</div>
+                  <div class="year">2026</div>
+                  <div class="description">Proyectos finales de carrera: bases de datos, redes, programación lógica/funcional y gráficos por computadora</div>
                 </div>
               </div>
 
               <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
                 <div class="fun-fact">
-                  <span class="emoji">☕</span>
-                  <span class="text">Coffee-fueled designer based in Portland</span>
+                  <span class="emoji">📷</span>
+                  <span class="text">Amante de la fotografía y los videojuegos, basado en Oaxaca</span>
                 </div>
                 <div class="action-buttons">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                  <a href="#" class="btn btn-outline">Download Resume</a>
+                  <a href="#portfolio" class="btn btn-primary">Ver Mi Trabajo</a>
+                  <a href="#" class="btn btn-outline">Descargar CV</a>
                 </div>
               </div>
 
@@ -327,21 +231,15 @@
 
     </section><!-- /About Section -->
 
-    <!-- ================================================================
-         SECCIÓN SKILLS (habilidades)
-         ------------------------------------------------------------
-         Tarjetas (skill-card) agrupadas por categoría (Frontend,
-         Backend, Design, DevOps...). Cada skill-item es UNA barra de
-         progreso: el texto en skill-percentage y el número en
-         aria-valuenow deben coincidir (el número controla qué tan
-         llena se ve la barra, animada por assets/js/main.js).
-         QUÉ SUELES EDITAR: los nombres de las tecnologías y sus
-         porcentajes, según lo que realmente sepas o estés aprendiendo.
-         ================================================================ -->
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="container section-title">
+          <h2>Habilidades</h2>
+          <p>Tecnologías con las que trabajo actualmente</p>
+        </div>
 
         <div class="row">
           <div class="col-lg-8">
@@ -351,38 +249,36 @@
                   <div class="skill-card">
                     <div class="skill-header">
                       <i class="bi bi-code-slash"></i>
-                      <h3>Frontend Development</h3>
+                      <h3>Desarrollo Front-end</h3>
                     </div>
                     <div class="skills-animation">
-                      <!-- Cada bloque .skill-item = una barra de progreso.
-                           El % del texto y "aria-valuenow" deben ser iguales -->
                       <div class="skill-item">
                         <div class="skill-info">
                           <span class="skill-name">HTML/CSS</span>
-                          <span class="skill-percentage">95%</span>
+                          <span class="skill-percentage">90%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
 
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">JavaScript</span>
-                          <span class="skill-percentage">88%</span>
+                          <span class="skill-name">JavaScript / TypeScript</span>
+                          <span class="skill-percentage">80%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
 
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">Vue.js</span>
-                          <span class="skill-percentage">82%</span>
+                          <span class="skill-name">React Native</span>
+                          <span class="skill-percentage">70%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
                     </div>
@@ -393,22 +289,22 @@
                   <div class="skill-card">
                     <div class="skill-header">
                       <i class="bi bi-server"></i>
-                      <h3>Backend Development</h3>
+                      <h3>Desarrollo Back-end</h3>
                     </div>
                     <div class="skills-animation">
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">PHP</span>
-                          <span class="skill-percentage">78%</span>
+                          <span class="skill-name">PostgreSQL</span>
+                          <span class="skill-percentage">80%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
 
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">Laravel</span>
+                          <span class="skill-name">MongoDB</span>
                           <span class="skill-percentage">75%</span>
                         </div>
                         <div class="skill-bar progress">
@@ -418,11 +314,11 @@
 
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">MySQL</span>
-                          <span class="skill-percentage">72%</span>
+                          <span class="skill-name">C++ / OpenGL</span>
+                          <span class="skill-percentage">70%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
                     </div>
@@ -433,36 +329,26 @@
                   <div class="skill-card">
                     <div class="skill-header">
                       <i class="bi bi-palette"></i>
-                      <h3>Design &amp; Tools</h3>
+                      <h3>Diseño</h3>
                     </div>
                     <div class="skills-animation">
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">Figma</span>
+                          <span class="skill-name">UI/UX Design</span>
+                          <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Fotografía</span>
                           <span class="skill-percentage">85%</span>
                         </div>
                         <div class="skill-bar progress">
                           <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Photoshop</span>
-                          <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Illustrator</span>
-                          <span class="skill-percentage">68%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
                     </div>
@@ -473,40 +359,40 @@
                   <div class="skill-card">
                     <div class="skill-header">
                       <i class="bi bi-cloud"></i>
-                      <h3>Cloud &amp; DevOps</h3>
+                      <h3>Cloud &amp; Herramientas</h3>
                     </div>
                     <div class="skills-animation">
                       <div class="skill-item">
                         <div class="skill-info">
-                          <span class="skill-name">AWS</span>
-                          <span class="skill-percentage">76%</span>
+                          <span class="skill-name">AWS (EC2)</span>
+                          <span class="skill-percentage">65%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Docker</span>
-                          <span class="skill-percentage">73%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
 
                       <div class="skill-item">
                         <div class="skill-info">
                           <span class="skill-name">Git</span>
-                          <span class="skill-percentage">90%</span>
+                          <span class="skill-percentage">85%</span>
                         </div>
                         <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Prolog / Haskell</span>
+                          <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
                     </div>
-                  </div><!-- End DevOps Card -->
+                  </div><!-- End Cloud Card -->
                 </div>
               </div>
             </div><!-- End Skills Grid -->
@@ -514,17 +400,17 @@
 
           <div class="col-lg-4">
             <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
-              <h3>Professional Expertise</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <h3>Perfil Profesional</h3>
+              <p>Desarrollador en formación con experiencia práctica full-stack: interfaces, APIs, bases de datos relacionales y no relacionales, y proyectos de programación lógica/funcional. Interesado en trabajar con empresas de tecnología a nivel internacional.</p>
 
               <div class="summary-stats">
                 <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
                   <div class="stat-circle">
-                    <i class="bi bi-trophy"></i>
+                    <i class="bi bi-mortarboard"></i>
                   </div>
                   <div class="stat-info">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Years Experience</span>
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Años en la carrera</span>
                   </div>
                 </div>
 
@@ -533,29 +419,33 @@
                     <i class="bi bi-diagram-3"></i>
                   </div>
                   <div class="stat-info">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Projects Completed</span>
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Proyectos escolares y personales</span>
                   </div>
                 </div>
 
                 <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
                   <div class="stat-circle">
-                    <i class="bi bi-people"></i>
+                    <i class="bi bi-camera"></i>
                   </div>
                   <div class="stat-info">
-                    <span class="stat-number">30+</span>
-                    <span class="stat-label">Happy Clients</span>
+                    <span class="stat-number">Telefono</span>
+                    <span class="stat-label">Equipo de fotografía/video</span>
                   </div>
                 </div>
               </div>
 
               <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
-                <h4>Certifications</h4>
+                <h4>Áreas de interés</h4>
                 <div class="badge-list">
-                  <div class="skill-badge">AWS Certified</div>
-                  <div class="skill-badge">Laravel Expert</div>
-                  <div class="skill-badge">Vue.js Developer</div>
-                  <div class="skill-badge">UI/UX Design</div>
+                  <div class="skill-badge">Freelance</div>
+                  <div class="skill-badge">AWS</div>
+                  <div class="skill-badge">UI/UX</div>
+                  <div class="skill-badge">Bases de Datos</div>
+                                    <div class="skill-badge">React/react-native</div>
+                                                      <div class="skill-badge">typescript</div>
+
+
                 </div>
               </div>
             </div><!-- End Skills Summary -->
@@ -566,23 +456,13 @@
 
     </section><!-- /Skills Section -->
 
-    <!-- ================================================================
-         SECCIÓN RESUME (experiencia / trayectoria)
-         ------------------------------------------------------------
-         Tarjetas de experiencia (experience-card): puesto, empresa,
-         fechas (duration) y una lista de logros (achievements).
-         Si aún no tienes experiencia laboral real, puedes usar esta
-         sección para prácticas, proyectos escolares o cursos, como
-         indica el ejercicio (metas/planes en vez de logros reales).
-         ================================================================ -->
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
-      <!-- Section Title -->
       <div class="container section-title">
-        <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Trayectoria</h2>
+        <p>Mi formación académica y experiencia práctica</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -590,25 +470,25 @@
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="experience-section">
               <div class="section-header">
-                <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
-                <p class="section-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas vestibulum tortor quam.</p>
+                <h2><i class="bi bi-briefcase"></i> Experiencia</h2>
+                <p class="section-subtitle">Proyectos y colaboraciones donde he aplicado desarrollo full-stack, diseño y trabajo en equipo.</p>
               </div>
 
               <div class="experience-cards">
                 <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
                   <div class="card-header">
                     <div class="role-info">
-                      <h3>Technical Director</h3>
-                      <h4>Proin Corporation</h4>
+                      <h3>Desarrollador Freelance</h3>
+                      <h4>Proyectos independientes</h4>
                     </div>
-                    <span class="duration">2022 - Present</span>
+                    <span class="duration">2024 - Presente</span>
                   </div>
                   <div class="card-body">
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra veniam sit amet lacus cursus.</p>
+                    <p>Desarrollo de aplicaciones y sitios web para distintos clientes, cubriendo tanto interfaz (front-end) como lógica y datos (back-end).</p>
                     <ul class="achievements">
-                      <li>Managed cross-functional teams of 15+ professionals</li>
-                      <li>Implemented agile methodologies resulting in 40% efficiency gain</li>
-                      <li>Led digital transformation initiatives worth $2M+</li>
+                      <li>Exploración de plataformas de user testing (UserTesting, uTest, testIO)</li>
+                      <li>Manejo de servidores en AWS EC2 con PostgreSQL</li>
+                      <li>Colaboración en proyectos de aplicaciones móviles con React Native / TypeScript</li>
                     </ul>
                   </div>
                 </div>
@@ -616,26 +496,13 @@
                 <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
                   <div class="card-header">
                     <div class="role-info">
-                      <h3>Senior Development Manager</h3>
-                      <h4>Consectetur Solutions Inc</h4>
+                      <h3>Proyectos Académicos</h3>
+                      <h4>Instituto Tecnológico de Oaxaca</h4>
                     </div>
-                    <span class="duration">2018 - 2022</span>
+                    <span class="duration">2022 - Presente</span>
                   </div>
                   <div class="card-body">
-                    <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim donec pede justo fringilla vel.</p>
-                  </div>
-                </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Product Development Specialist</h3>
-                      <h4>Adipiscing Technologies</h4>
-                    </div>
-                    <span class="duration">2015 - 2018</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem maecenas nec odio et ante tincidunt tempus donec vitae sapien ut.</p>
+                    <p>Desarrollo de sistemas expertos en Prolog, aplicaciones en Haskell, administración de bases de datos (PostgreSQL/MongoDB), diseño de redes y proyectos de gráficos por computadora en C++/OpenGL.</p>
                   </div>
                 </div>
               </div>
@@ -645,8 +512,8 @@
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <div class="education-section">
               <div class="section-header">
-                <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.</p>
+                <h2><i class="bi bi-mortarboard"></i> Formación Académica</h2>
+                <p class="section-subtitle">Estudios y certificaciones.</p>
               </div>
 
               <div class="education-timeline">
@@ -656,11 +523,11 @@
                   <div class="timeline-marker"></div>
                   <div class="education-content">
                     <div class="degree-header">
-                      <h3>Master of Computer Science</h3>
-                      <span class="year">2015 - 2017</span>
+                      <h3>Ingeniería en Sistemas Computacionales</h3>
+                      <span class="year">2022 - Presente</span>
                     </div>
-                    <h4 class="institution">Tempus University</h4>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec quam felis ultricies nec.</p>
+                    <h4 class="institution">Instituto Tecnológico de Oaxaca (TecNM)</h4>
+                    <p>Formación en administración de bases de datos, redes de computadoras, programación lógica y funcional, ingeniería de software y gráficos por computadora.</p>
                   </div>
                 </div>
 
@@ -668,23 +535,11 @@
                   <div class="timeline-marker"></div>
                   <div class="education-content">
                     <div class="degree-header">
-                      <h3>Bachelor of Information Technology</h3>
-                      <span class="year">2011 - 2015</span>
+                      <h3>Autoaprendizaje en Desarrollo Web</h3>
+                      <span class="year">Continuo</span>
                     </div>
-                    <h4 class="institution">Rhoncus Institute of Technology</h4>
-                    <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi aenean vulputate.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="500">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Certificate in Digital Innovation</h3>
-                      <span class="year">2020</span>
-                    </div>
-                    <h4 class="institution">Ligula Academy</h4>
-                    <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh donec sodales sagittis magna.</p>
+                    <h4 class="institution">Proyectos personales y freelance</h4>
+                    <p>Práctica constante en front-end, back-end, UI/UX y despliegue en la nube (AWS).</p>
                   </div>
                 </div>
               </div>
@@ -696,23 +551,13 @@
 
     </section><!-- /Resume Section -->
 
-    <!-- ================================================================
-         SECCIÓN SERVICES (servicios que ofreces)
-         ------------------------------------------------------------
-         6 tarjetas (service-item), cada una con ícono, título y
-         descripción corta. Puedes usarla para mostrar en qué áreas
-         puedes ayudar (ej. "Desarrollo Frontend", "Soporte Técnico",
-         "Automatización de tareas") aunque todavía sea a nivel
-         estudiante/aprendizaje.
-         ================================================================ -->
     <!-- Services Section -->
     <section id="services" class="services section">
 
-      <!-- Section Title -->
       <div class="container section-title">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Servicios</h2>
+        <p>En qué puedo ayudarte</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -722,16 +567,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item">
               <div class="icon">
-                <i class="bi bi-stack"></i>
+                <i class="bi bi-code-slash"></i>
               </div>
-              <h3>Digital Solutions</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+              <h3>Desarrollo Front-end</h3>
+              <p>Interfaces web modernas, responsivas y funcionales, adaptadas a las necesidades del proyecto.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -739,16 +578,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item">
               <div class="icon">
-                <i class="bi bi-shield-check"></i>
+                <i class="bi bi-server"></i>
               </div>
-              <h3>Secure Systems</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+              <h3>Desarrollo Back-end</h3>
+              <p>APIs, lógica de negocio y administración de bases de datos relacionales y no relacionales.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -756,16 +589,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
               <div class="icon">
-                <i class="bi bi-graph-up"></i>
+                <i class="bi bi-palette"></i>
               </div>
-              <h3>Growth Strategy</h3>
-              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+              <h3>Diseño UI/UX</h3>
+              <p>Interfaces centradas en el usuario, prototipos y flujos claros para una mejor experiencia.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -773,50 +600,10 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item">
               <div class="icon">
-                <i class="bi bi-cpu"></i>
-              </div>
-              <h3>AI Integration</h3>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 5 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon">
                 <i class="bi bi-cloud-arrow-up"></i>
               </div>
-              <h3>Cloud Services</h3>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 6 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-gear"></i>
-              </div>
-              <h3>Process Automation</h3>
-              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+              <h3>Despliegue en la Nube</h3>
+              <p>Configuración y despliegue de servidores y bases de datos en AWS.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -826,71 +613,46 @@
 
     </section><!-- /Services Section -->
 
-    <!-- ================================================================
-         SECCIÓN PORTFOLIO (proyectos)
-         ------------------------------------------------------------
-         Usa la librería Isotope (assets/vendor/isotope-layout) para
-         poder filtrar los proyectos por categoría con los botones de
-         arriba (data-filter). Cada proyecto es un portfolio-item con
-         una imagen y una clase "filter-xxx" que dice a qué categoría
-         pertenece (debe coincidir con el data-filter del botón).
-         Al hacer clic en la lupa (glightbox) se abre la imagen en
-         grande; al hacer clic en la flecha va a portfolio-details.html.
-         QUÉ SUELES EDITAR: las imágenes, los títulos (entry-title), la
-         categoría (entry-meta) y las clases filter-* de cada proyecto.
-         Recuerda: si aún no tienes proyectos reales, pon aquí los que
-         PLANEAS hacer (déjalo claro en el texto, ej. "Proyecto en plan").
-         ================================================================ -->
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Portafolio</h2>
+        <p>Algunos de mis proyectos</p>
+      </div>
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <!-- Botones de filtro. El texto que ve el usuario está en el
-               <li>, y "data-filter" debe coincidir con la clase filter-*
-               que le pusiste a cada portfolio-item de abajo. -->
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">
-              <i class="bi bi-grid-3x3"></i> All Projects
+              <i class="bi bi-grid-3x3"></i> Todos
             </li>
             <li data-filter=".filter-ui">
               UI/UX
             </li>
             <li data-filter=".filter-development">
-              Development
+              Desarrollo
             </li>
             <li data-filter=".filter-photography">
-              Photography
-            </li>
-            <li data-filter=".filter-marketing">
-              Marketing
+              Fotografía
             </li>
           </ul>
 
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="img/test.png" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Mobile Banking App</h3>
+                      <div class="entry-meta">Desarrollo</div>
+                      <h3 class="entry-title">Sistema Experto en Prolog</h3>
                       <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
+                        <a href="img/proyecto.png.jpg" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Sistema Experto en Prolog; description: Diagnóstico de errores de programación con reglas de inferencia.">
                           <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
                         </a>
                       </div>
                     </div>
@@ -902,61 +664,14 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="img/mongodb.png" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">E-Learning Platform</h3>
+                      <div class="entry-meta">Desarrollo</div>
+                      <h3 class="entry-title">Base de Datos PostgreSQL en AWS</h3>
                       <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
+                        <a href="img/proyecto.png.jpg" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Base de Datos PostgreSQL en AWS; description: Despliegue y administración de base de datos en EC2.">
                           <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Urban Architecture</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Social Media Campaign</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
                         </a>
                       </div>
                     </div>
@@ -968,39 +683,14 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="img/proyecto.png.jpg" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Smart Home Interface</h3>
+                      <div class="entry-meta">UI/UX</div>
+                      <h3 class="entry-title">App de Control de Acceso (FitControl)</h3>
                       <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
+                        <a href="" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: FitControl; description: Sistema de control de acceso para gimnasio, proyecto de Ingeniería de Software.">
                           <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">Cloud Management System</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
                         </a>
                       </div>
                     </div>
@@ -1012,39 +702,14 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Nature Collection</h3>
+                      <div class="entry-meta">Fotografía</div>
+                      <h3 class="entry-title">Fotografía y Video </h3>
                       <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
+                        <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Fotografía y Video; description: Trabajo personal de fotografía y videografía.">
                           <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Brand Strategy</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
                         </a>
                       </div>
                     </div>
@@ -1061,362 +726,29 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- ================================================================
-         SECCIÓN TESTIMONIALS (recomendaciones/reseñas)
-         ------------------------------------------------------------
-         Dos bloques: unas "critic reviews" fijas y un carrusel (Swiper)
-         de testimonios que se deslizan solos. Las estrellitas amarillas
-         (#FFD700 en el CSS) se dejaron igual a propósito: es un color
-         "universal" de calificación, no parte de la marca del sitio.
-         Si aún no tienes recomendaciones reales de clientes/jefes,
-         puedes usar esta sección para comentarios de compañeros de
-         clase o profesores sobre algún trabajo tuyo, o quitarla.
-         ================================================================ -->
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-12">
-            <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">The New York Times</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </div>
-                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">Washington Post</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">The Guardian</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonials-container">
-              <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": 1,
-                    "spaceBetween": 30,
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      },
-                      "992": {
-                        "slidesPerView": 3
-                      }
-                    }
-                  }
-                </script>
-
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
-                      </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-1.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Jane Smith</h3>
-                          <h4>Book Enthusiast</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.
-                      </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-2.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Michael Johnson</h3>
-                          <h4>Sci-Fi Blogger</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                      <p>
-                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.
-                      </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-3.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Emily Davis</h3>
-                          <h4>Book Club President</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur.
-                      </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-4.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Robert Wilson</h3>
-                          <h4>Literary Reviewer</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 text-center" data-aos="fade-up">
-            <div class="overall-rating">
-              <div class="rating-number">4.8</div>
-              <div class="rating-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
-              </div>
-              <p>Based on 230+ reviews</p>
-              <div class="rating-platforms">
-                <span>Goodreads</span>
-                <span>Amazon</span>
-                <span>Barnes &amp; Noble</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Testimonials Section -->
-
-    <!-- ================================================================
-         SECCIÓN FAQ (preguntas frecuentes)
-         ------------------------------------------------------------
-         Acordeón de preguntas y respuestas (usa Bootstrap collapse).
-         Cada faq-item tiene una pregunta (el <h3>/botón) y una
-         respuesta oculta que se despliega al hacer clic. Buena para
-         responder dudas típicas como "¿en qué tecnologías trabajas?"
-         o "¿cómo puedo contactarte?".
-         ================================================================ -->
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- ================================================================
-         SECCIÓN CONTACT (contacto)
-         ------------------------------------------------------------
-         Izquierda: datos de contacto (ubicación, teléfono, correo).
-         Derecha: formulario que apunta a forms/contact.php (action=).
-         OJO: ese PHP necesita un servidor con PHP para funcionar (NO
-         funciona en GitHub Pages, que solo sirve archivos estáticos).
-         Para este ejercicio puedes dejarlo solo como formulario visual,
-         o cambiar el action="" para usar un servicio externo gratuito
-         (por ejemplo Formspree) si quieres que sí envíe correos.
-         Los mensajes .error-message (rojo) y .sent-message (verde) del
-         CSS se dejaron con sus colores originales a propósito: son
-         colores universales de error/éxito, no van con la paleta de marca.
-         ================================================================ -->
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto en mente? Hablemos</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-4 g-lg-5">
           <div class="col-lg-5">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <h3>Información de Contacto</h3>
+              <p>Estoy disponible para proyectos freelance de desarrollo web, apps y bases de datos.</p>
 
               <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="content">
-                  <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
+                  <h4>Ubicación</h4>
+                  <p>Oaxaca de Juárez, Oaxaca, México</p>
                 </div>
               </div>
 
@@ -1425,9 +757,8 @@
                   <i class="bi bi-envelope"></i>
                 </div>
                 <div class="content">
-                  <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <h4>Correo Electrónico</h4>
+                  <p>tu-correo@example.com</p>
                 </div>
               </div>
             </div>
@@ -1435,34 +766,34 @@
 
           <div class="col-lg-7">
             <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+              <h3>Envíame un Mensaje</h3>
+              <p>Cuéntame sobre tu proyecto y te responderé lo antes posible.</p>
 
               <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    <input type="email" class="form-control" name="email" placeholder="Tu Correo" required="">
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
+                    <div class="loading">Cargando</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
                   </div>
 
                 </div>
@@ -1479,34 +810,20 @@
 
   </main>
 
-  <!-- ================================================================
-       FOOTER
-       ------------------------------------------------------------
-       Copyright, redes sociales y créditos de la plantilla.
-       ⚠️ IMPORTANTE: el link "Designed by BootstrapMade" de abajo es
-       parte de la licencia GRATUITA de esta plantilla: hay que dejarlo
-       intacto (solo se puede quitar si se compra la versión de pago).
-       De hecho te conviene: en el README de tu ejercicio te piden
-       poner de dónde descargaste la plantilla, ¡y aquí ya está! Cambia
-       "Style" por tu nombre y agrega tus redes sociales reales.
-       ================================================================ -->
+  <!-- ⚠️ IMPORTANTE: el link "Designed by BootstrapMade" es parte de la
+       licencia GRATUITA de esta plantilla, se deja intacto según la licencia. -->
   <footer id="footer" class="footer dark-background">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Style</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Luis Eduardo</strong> <span>Todos los derechos reservados</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
         <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href=""><i class="bi bi-github"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
       </div>
     </div>
@@ -1516,18 +833,6 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- ================================================================
-       LIBRERÍAS JS Y QUÉ HACE CADA UNA (no necesitas tocarlas):
-       - bootstrap.bundle    -> hace funcionar los menús, dropdowns, etc.
-       - php-email-form      -> valida y envía el formulario de contacto (requiere PHP)
-       - aos                 -> ejecuta las animaciones data-aos="..." al hacer scroll
-       - purecounter         -> anima los números de "hero-stats" (contar hasta X)
-       - typed.js            -> escribe/borra el texto del Hero (data-typed-items)
-       - waypoints           -> detecta cuándo un elemento entra en pantalla
-       - glightbox           -> abre las imágenes del Portfolio en una ventana grande
-       - imagesloaded / isotope -> hacen que el Portfolio se pueda filtrar y acomodar en cuadrícula
-       - swiper              -> mueve el carrusel de Testimonials
-       ================================================================ -->
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1540,8 +845,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File: aquí está la configuración específica de este sitio
-       (qué elementos usan typed.js, cómo se comporta el scroll, etc.) -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
