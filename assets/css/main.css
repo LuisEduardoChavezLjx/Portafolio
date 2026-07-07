@@ -19,39 +19,55 @@
   --nav-font: "Open Sans",  sans-serif;
 }
 
+/* ================================================================
+   PALETA "SISTEMAS COMPUTACIONALES" (modificado a partir del original)
+   ------------------------------------------------------------------
+   Se cambió la paleta azul original de la plantilla por una paleta
+   inspirada en cómputo/tecnología: azul marino oscuro (como una placa
+   base) + un acento turquesa/cian (como texto de terminal). Todo lo
+   demás (tipografías, tamaños, animaciones, estructura HTML) se dejó
+   exactamente igual: SOLO se tocaron las variables de color de aquí
+   abajo. Si quieres regresar a los colores originales, solo reemplaza
+   estos valores por los azules de antes (#065cc2, #13447f, #314862).
+   ================================================================ */
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #314862; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #13447f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #065cc2; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff; /* Fondo general del sitio (blanco, para que el contenido se lea bien) */
+  --default-color: #263646; /* Texto normal: gris azulado oscuro, tipo "consola" */
+  --heading-color: #0B2340; /* Títulos: azul marino muy oscuro (evoca una placa/circuito) */
+  --accent-color: #0FBFA6; /* Acento: turquesa/cian, usado en botones, links y detalles que resaltan */
+  --surface-color: #ffffff; /* Fondo de tarjetas y cajas dentro de las secciones */
+  --contrast-color: #ffffff; /* Color de texto que va SOBRE el color de acento (debe contrastar bien) */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #314862;  /* The default color of the main navmenu links */
-  --nav-hover-color: #065cc2; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #11427d; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #065cc2; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #acc4e0; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #263646;  /* Color de los links del menú principal */
+  --nav-hover-color: #0FBFA6; /* Color de los links al pasar el mouse o estar activos (mismo turquesa de acento) */
+  --nav-mobile-background-color: #0B2340; /* Fondo del menú cuando se abre en celular */
+  --nav-dropdown-background-color: #0FBFA6; /* Fondo de los submenús (dropdown) */
+  --nav-dropdown-color: #DFF7F3; /* Texto de los submenús: turquesa muy claro, para contrastar con el fondo turquesa fuerte */
+  --nav-dropdown-hover-color: #ffffff; /* Color de texto del submenú al pasar el mouse */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
+/* Se usa en secciones con fondo claro (alterna con el fondo blanco normal) */
 .light-background {
-  --background-color: #f7faff;
+  --background-color: #F2F7F7; /* gris muy claro con un toque frío, tipo "pantalla apagada" */
   --surface-color: #ffffff;
 }
 
+/* Se usa en secciones con fondo oscuro (por ejemplo el Hero). Aquí es donde
+   más se nota el cambio de paleta: antes era azul, ahora es azul marino
+   oscuro con acentos turquesa, para un look más "tech / sistemas". */
 .dark-background {
-  --background-color: #065cc2;
+  --background-color: #0B2340; /* azul marino muy oscuro, como fondo de terminal */
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --accent-color: #afcdf1;
-  --surface-color: #2973cc;
+  --accent-color: #33E6CC; /* turquesa brillante, resalta bien sobre el fondo oscuro */
+  --surface-color: #123B63; /* azul un poco más claro, para tarjetas sobre el fondo oscuro */
   --contrast-color: #ffffff;
 }
 

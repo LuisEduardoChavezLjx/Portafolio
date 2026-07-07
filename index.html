@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Style Bootstrap Template</title>
+  <title>Luis Eduardo Portafolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -17,6 +17,15 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- ================================================================
+       LIBRERÍAS EXTERNAS (vendor) QUE USA ESTA PLANTILLA:
+       - bootstrap          -> el framework de estilos (grid, botones, etc.)
+       - bootstrap-icons    -> los iconitos (bi bi-xxx) que se usan en todo el sitio
+       - aos ("Animate On Scroll") -> las animaciones al hacer scroll (data-aos="...")
+       - glightbox          -> la ventana emergente para ver imágenes en grande (Portfolio)
+       - swiper             -> el carrusel deslizable (Testimonials)
+       No necesitas tocar estas carpetas, solo saber para qué sirve cada una.
+       ================================================================ -->
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,7 +33,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS File: aquí están TODOS los estilos y la paleta de colores
+       (ver el bloque de variables --accent-color, etc. al inicio de este
+       archivo, ya cambiado a la paleta "sistemas computacionales") -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -38,6 +49,22 @@
 
 <body class="index-page">
 
+  <!-- ================================================================
+       HEADER / MENÚ DE NAVEGACIÓN
+       ------------------------------------------------------------
+       Esta barra se queda fija arriba (fixed-top) mientras se hace
+       scroll. Incluye: tu foto de perfil, tu nombre, tus redes
+       sociales y el menú de links que llevan a cada sección de la
+       página (por anclas #hero, #about, #resume, etc.).
+       QUÉ SUELES EDITAR AQUÍ:
+         - profile-square-1.webp -> tu foto real de perfil
+         - "Alex Smith"          -> tu nombre
+         - los href="#" de redes -> tus links reales (LinkedIn, GitHub, etc.)
+         - la lista <ul> de abajo -> los nombres/orden de tus secciones
+       Los colores de este menú salen de las variables --nav-* que
+       están al inicio de assets/css/main.css (ya cambiadas a la
+       paleta turquesa/marino de "sistemas computacionales").
+       ================================================================ -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
@@ -50,16 +77,19 @@
 
       <nav id="navmenu" class="navmenu">
 
+        <!-- Foto de perfil circular que aparece arriba del menú -->
         <div class="profile-img">
           <img src="assets/img/profile/profile-square-1.webp" alt="" class="img-fluid rounded-circle">
         </div>
 
+        <!-- Tu nombre, se muestra debajo de la foto de perfil -->
         <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
           <h1 class="sitename">Alex Smith</h1>
         </a>
 
+        <!-- Iconos de redes sociales: cambia los href="#" por tus links reales -->
         <div class="social-links text-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -68,12 +98,14 @@
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
 
+        <!-- Links del menú principal. Cada href="#id" apunta a una sección
+             más abajo en el mismo index.html (scroll suave automático). -->
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#about">Acerca de Mi</a></li>
+          <li><a href="#resume">resumen</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#services">Servicios</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -93,6 +125,7 @@
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- Ícono de "hamburguesa" que aparece solo en pantallas chicas -->
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -101,6 +134,25 @@
 
   <main class="main">
 
+    <!-- ================================================================
+         SECCIÓN HERO (portada / primera pantalla)
+         ------------------------------------------------------------
+         Es lo primero que ve la persona al entrar al sitio. Tiene:
+           - Un título con efecto de "máquina de escribir" (Typed.js),
+             controlado por el atributo data-typed-items (ahí van las
+             palabras que van cambiando: "Designer, Developer", etc.)
+           - Un párrafo corto de presentación (<p class="lead">)
+           - Contadores animados (hero-stats), por ejemplo proyectos
+             hechos, años de experiencia, clientes. Cambia el número en
+             data-purecounter-end y el texto en stat-label.
+           - Dos botones de acción (hero-actions): uno lleva a
+             #portfolio y otro a #contact.
+           - Tus redes sociales (social-links).
+           - Del lado derecho, tu foto (hero-main-image) y 3 tarjetas
+             flotantes (floating-card) con íconos y texto corto.
+         QUÉ SUELES EDITAR: el título, el párrafo, las 3 palabras del
+         typed, los números de las estadísticas y la imagen.
+         ================================================================ -->
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
@@ -109,9 +161,14 @@
 
           <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
             <div class="content-wrapper">
+              <!-- "typed" hace que las palabras dentro de data-typed-items
+                   se escriban y borren solas en bucle (ver assets/js/main.js) -->
               <h1 class="hero-title">Creative <span class="typed" data-typed-items="Designer, Developer, Freelancer, Artist"></span></h1>
               <p class="lead">I create digital experiences that inspire and engage. With a passion for clean design and innovative solutions, I transform ideas into beautiful, functional realities.</p>
 
+              <!-- Contadores animados: cambia data-purecounter-end por el
+                   número final y el texto de stat-label por lo que quieras
+                   mostrar (ej. "Proyectos", "Años estudiando", "Cursos") -->
               <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
                 <div class="stat-item">
                   <span class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="2">0</span>
@@ -167,6 +224,18 @@
 
     </section><!-- /Hero Section -->
 
+    <!-- ================================================================
+         SECCIÓN ABOUT (Sobre mí)
+         ------------------------------------------------------------
+         Estructura: foto + firma/cita a la izquierda, y a la derecha
+         una introducción, 3 tarjetas de "skills" rápidas (skill-item)
+         y una línea de tiempo (journey-timeline) con año + descripción.
+         QUÉ SUELES EDITAR:
+           - El texto "Lorem ipsum..." -> tu presentación real
+           - Las 3 skill-item -> tus 3 fortalezas principales
+           - journey-timeline -> tus estudios/experiencia por año
+           - profile-square-1.webp y signature-1.webp -> tu foto/firma
+         ================================================================ -->
     <!-- About Section -->
     <section id="about" class="about section">
 
@@ -258,6 +327,17 @@
 
     </section><!-- /About Section -->
 
+    <!-- ================================================================
+         SECCIÓN SKILLS (habilidades)
+         ------------------------------------------------------------
+         Tarjetas (skill-card) agrupadas por categoría (Frontend,
+         Backend, Design, DevOps...). Cada skill-item es UNA barra de
+         progreso: el texto en skill-percentage y el número en
+         aria-valuenow deben coincidir (el número controla qué tan
+         llena se ve la barra, animada por assets/js/main.js).
+         QUÉ SUELES EDITAR: los nombres de las tecnologías y sus
+         porcentajes, según lo que realmente sepas o estés aprendiendo.
+         ================================================================ -->
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
@@ -274,6 +354,8 @@
                       <h3>Frontend Development</h3>
                     </div>
                     <div class="skills-animation">
+                      <!-- Cada bloque .skill-item = una barra de progreso.
+                           El % del texto y "aria-valuenow" deben ser iguales -->
                       <div class="skill-item">
                         <div class="skill-info">
                           <span class="skill-name">HTML/CSS</span>
@@ -484,6 +566,15 @@
 
     </section><!-- /Skills Section -->
 
+    <!-- ================================================================
+         SECCIÓN RESUME (experiencia / trayectoria)
+         ------------------------------------------------------------
+         Tarjetas de experiencia (experience-card): puesto, empresa,
+         fechas (duration) y una lista de logros (achievements).
+         Si aún no tienes experiencia laboral real, puedes usar esta
+         sección para prácticas, proyectos escolares o cursos, como
+         indica el ejercicio (metas/planes en vez de logros reales).
+         ================================================================ -->
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
@@ -605,6 +696,15 @@
 
     </section><!-- /Resume Section -->
 
+    <!-- ================================================================
+         SECCIÓN SERVICES (servicios que ofreces)
+         ------------------------------------------------------------
+         6 tarjetas (service-item), cada una con ícono, título y
+         descripción corta. Puedes usarla para mostrar en qué áreas
+         puedes ayudar (ej. "Desarrollo Frontend", "Soporte Técnico",
+         "Automatización de tareas") aunque todavía sea a nivel
+         estudiante/aprendizaje.
+         ================================================================ -->
     <!-- Services Section -->
     <section id="services" class="services section">
 
@@ -726,6 +826,21 @@
 
     </section><!-- /Services Section -->
 
+    <!-- ================================================================
+         SECCIÓN PORTFOLIO (proyectos)
+         ------------------------------------------------------------
+         Usa la librería Isotope (assets/vendor/isotope-layout) para
+         poder filtrar los proyectos por categoría con los botones de
+         arriba (data-filter). Cada proyecto es un portfolio-item con
+         una imagen y una clase "filter-xxx" que dice a qué categoría
+         pertenece (debe coincidir con el data-filter del botón).
+         Al hacer clic en la lupa (glightbox) se abre la imagen en
+         grande; al hacer clic en la flecha va a portfolio-details.html.
+         QUÉ SUELES EDITAR: las imágenes, los títulos (entry-title), la
+         categoría (entry-meta) y las clases filter-* de cada proyecto.
+         Recuerda: si aún no tienes proyectos reales, pon aquí los que
+         PLANEAS hacer (déjalo claro en el texto, ej. "Proyecto en plan").
+         ================================================================ -->
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
@@ -739,6 +854,9 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
+          <!-- Botones de filtro. El texto que ve el usuario está en el
+               <li>, y "data-filter" debe coincidir con la clase filter-*
+               que le pusiste a cada portfolio-item de abajo. -->
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
             <li data-filter="*" class="filter-active">
               <i class="bi bi-grid-3x3"></i> All Projects
@@ -943,6 +1061,17 @@
 
     </section><!-- /Portfolio Section -->
 
+    <!-- ================================================================
+         SECCIÓN TESTIMONIALS (recomendaciones/reseñas)
+         ------------------------------------------------------------
+         Dos bloques: unas "critic reviews" fijas y un carrusel (Swiper)
+         de testimonios que se deslizan solos. Las estrellitas amarillas
+         (#FFD700 en el CSS) se dejaron igual a propósito: es un color
+         "universal" de calificación, no parte de la marca del sitio.
+         Si aún no tienes recomendaciones reales de clientes/jefes,
+         puedes usar esta sección para comentarios de compañeros de
+         clase o profesores sobre algún trabajo tuyo, o quitarla.
+         ================================================================ -->
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
       <!-- Section Title -->
@@ -1154,6 +1283,15 @@
       </div>
     </section><!-- /Testimonials Section -->
 
+    <!-- ================================================================
+         SECCIÓN FAQ (preguntas frecuentes)
+         ------------------------------------------------------------
+         Acordeón de preguntas y respuestas (usa Bootstrap collapse).
+         Cada faq-item tiene una pregunta (el <h3>/botón) y una
+         respuesta oculta que se despliega al hacer clic. Buena para
+         responder dudas típicas como "¿en qué tecnologías trabajas?"
+         o "¿cómo puedo contactarte?".
+         ================================================================ -->
     <!-- Faq Section -->
     <section id="faq" class="faq section">
 
@@ -1229,6 +1367,20 @@
 
     </section><!-- /Faq Section -->
 
+    <!-- ================================================================
+         SECCIÓN CONTACT (contacto)
+         ------------------------------------------------------------
+         Izquierda: datos de contacto (ubicación, teléfono, correo).
+         Derecha: formulario que apunta a forms/contact.php (action=).
+         OJO: ese PHP necesita un servidor con PHP para funcionar (NO
+         funciona en GitHub Pages, que solo sirve archivos estáticos).
+         Para este ejercicio puedes dejarlo solo como formulario visual,
+         o cambiar el action="" para usar un servicio externo gratuito
+         (por ejemplo Formspree) si quieres que sí envíe correos.
+         Los mensajes .error-message (rojo) y .sent-message (verde) del
+         CSS se dejaron con sus colores originales a propósito: son
+         colores universales de error/éxito, no van con la paleta de marca.
+         ================================================================ -->
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
@@ -1327,6 +1479,17 @@
 
   </main>
 
+  <!-- ================================================================
+       FOOTER
+       ------------------------------------------------------------
+       Copyright, redes sociales y créditos de la plantilla.
+       ⚠️ IMPORTANTE: el link "Designed by BootstrapMade" de abajo es
+       parte de la licencia GRATUITA de esta plantilla: hay que dejarlo
+       intacto (solo se puede quitar si se compra la versión de pago).
+       De hecho te conviene: en el README de tu ejercicio te piden
+       poner de dónde descargaste la plantilla, ¡y aquí ya está! Cambia
+       "Style" por tu nombre y agrega tus redes sociales reales.
+       ================================================================ -->
   <footer id="footer" class="footer dark-background">
 
     <div class="container">
@@ -1353,6 +1516,18 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- ================================================================
+       LIBRERÍAS JS Y QUÉ HACE CADA UNA (no necesitas tocarlas):
+       - bootstrap.bundle    -> hace funcionar los menús, dropdowns, etc.
+       - php-email-form      -> valida y envía el formulario de contacto (requiere PHP)
+       - aos                 -> ejecuta las animaciones data-aos="..." al hacer scroll
+       - purecounter         -> anima los números de "hero-stats" (contar hasta X)
+       - typed.js            -> escribe/borra el texto del Hero (data-typed-items)
+       - waypoints           -> detecta cuándo un elemento entra en pantalla
+       - glightbox           -> abre las imágenes del Portfolio en una ventana grande
+       - imagesloaded / isotope -> hacen que el Portfolio se pueda filtrar y acomodar en cuadrícula
+       - swiper              -> mueve el carrusel de Testimonials
+       ================================================================ -->
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1365,7 +1540,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS File: aquí está la configuración específica de este sitio
+       (qué elementos usan typed.js, cómo se comporta el scroll, etc.) -->
   <script src="assets/js/main.js"></script>
 
 </body>
